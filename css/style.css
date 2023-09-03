@@ -1,0 +1,187 @@
+:root {
+  --main-color: white;
+}
+body {
+  background-color: black !important;
+}
+ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+}
+a {
+  text-decoration: none !important;
+}
+/* ----------------------loding spinner----------------------------- */
+.loading-spiner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  z-index: 999;
+}
+.loader {
+  color: #fff;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+/*------------------- meal----------- */
+.meal-and-overlay {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.meal-overlay {
+  background-color: rgba(255, 255, 255, 0.552);
+  position: absolute;
+  left: 0;
+  top: 120%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 28px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: 0.8s;
+}
+.meal-and-overlay:hover .meal-overlay {
+  top: 0;
+}
+/* ----------------nav--------------------- */
+nav {
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  /* why the not ster to fit the parent height */
+  height: 100vh;
+}
+nav .show-hide {
+  display: none;
+}
+nav .link-content {
+  background-color: black;
+  color: var(--main-color);
+  height: 100vh;
+  white-space: nowrap;
+}
+nav .link-content a {
+  color: var(--main-color) !important;
+  font-size: 16px;
+}
+
+nav .link-content .nav-links li {
+  padding-block: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: 2s;
+  top: 0px;
+}
+nav .link-content .nav-links.fide-out li {
+  top: 300px;
+}
+
+nav .nav-controllers {
+  background-color: var(--main-color);
+  height: 100vh;
+}
+
+nav .nav-controllers .logo-img {
+  width: 60px;
+}
+nav .nav-controllers .controller-links a {
+  font-size: 16px;
+  color: black;
+}
+
+/*-------------------------------- contact us----------------- */
+.contact-us .container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* search */
+.search ::placeholder {
+  color: rgba(255, 255, 255, 0.626) !important;
+}
+/* cat */
+.cat-overlay {
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
+  flex-direction: column;
+  overflow: hidden;
+}
+/*------------------------------- area--------------------------- */
+.area .area-info {
+  cursor: pointer;
+}
+.area .area-info i,
+.area .area-info h3 {
+  font-size: 40px;
+  color: var(--main-color);
+}
+/* ----------------------------ingredients---------------------------- */
+.ingredients {
+  cursor: pointer;
+}
+.ingredients .ingre-info {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 14px;
+}
+.ingredients .ingre-info i {
+  font-size: 60px;
+}

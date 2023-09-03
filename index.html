@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/347beaf4f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.js" defer></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <!------------------------------------------------------------------------------------------------------------------- loading spinner----------------------------------------------------------------------------------------------------- -->
+
+    <!-- <div class="loading-spiner d-none"><span class="loader"></span></div> -->
+
+    <!------------------------------------------------------------------------------------------------------------------- nav----------------------------------------------------------------------------------------------------- -->
+    <nav class="position-fixed d-flex ps-0">
+      <div class="show-hide">
+        <div
+          class="link-content p-4 d-flex flex-column justify-content-between"
+        >
+          <ul class="nav-links fide-out">
+            <li id="search-btn">search</li>
+            <li id="cateagore-btn">categories</li>
+            <li id="area-btn">area</li>
+            <li id="ingredients-btn">ingredients</li>
+            <li id="contact-btn">contact us</li>
+          </ul>
+          <div class="nav-media">
+            <ul class="nav-media-links d-flex gap-1 mb-2">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-globe"></i></a>
+              </li>
+            </ul>
+            <div class="copy-right">
+              Copyright Â &copy; 2023 All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="nav-controllers d-flex flex-column justify-content-between py-4 px-2 align-items-center"
+      >
+        <div class="logo-img">
+          <img class="w-100" src="images/logo.png" alt="yummy logo" />
+        </div>
+        <div class="controller fs-1"><i class="fa-solid fa-bars"></i></div>
+        <ul class="controller-links">
+          <li>
+            <a href="#"><i class="fa-solid fa-globe"></i> </a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!------------------------------------------------------------------------------------------------------------------- search----------------------------------------------------------------------------------------------------- -->
+
+    <section class="search d-none">
+      <div class="container py-5">
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <input
+              type="text"
+              name="mealname"
+              id="mealnames"
+              placeholder="Search By Meal Name"
+              class="form-control mb-2 bg-transparent text-white"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="text"
+              name="mealfirstletterS"
+              id="mealfirstletter"
+              placeholder="Search By Meal First letter"
+              class="form-control mb-2 bg-transparent text-white"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="position-relative">
+      <div class="loading-spiner d-none"><span class="loader"></span></div>
+
+      <!-- -------------------------------------------------------------------------------filtered meals------------------------------------- -->
+      <section class="filtered-meals d-none">
+        <div class="container py-5">
+          <div class="row g-3">
+            <!-- addddd js -->
+            <!-- <div class="col-md-4 col-lg-3">
+              <div class="home-meal-img meal-and-overlay">
+                <img
+                  class="w-100 rounded-2"
+                  src="./g046bb1663960946.jpg"
+                  alt="meal"
+                />
+                <div class="home-meal-name meal-overlay">sushi</div>
+              </div>
+            </div> -->
+            <!-- addddd js -->
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------------------------------------------------------------cateagore------------------------------------- -->
+      <section class="categories d-none">
+        <div class="container py-5">
+          <div class="row g-3">
+            <!-- addddd js -->
+
+            <!-- addddd js -->
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------------------------------------------------------------Area------------------------------------- -->
+      <section class="area d-none">
+        <div class="container py-5">
+          <div class="row g-3">
+            <!-- addddd js -->
+            <!-- <div class="col-md-4 col-lg-3">
+              <div class="area-info text-center">
+                <i class="fa-regular fa-flag"></i>
+                <h3>egypt</h3>
+              </div>
+            </div> -->
+            <!-- addddd js -->
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------------------------------------------------------------Ingredients------------------------------------- -->
+      <section class="ingredients d-none">
+        <div class="container py-5">
+          <div class="row g-3">
+            <!-- addddd js -->
+            <!-- <div class="col-md-4 col-lg-3">
+              <div class="ingre-info">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>suhsi</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolor a facere dicta ab, in enim velit nostrum libero.
+                  Repudiandae, ipsa.
+                </p>
+              </div>
+            </div> -->
+            <!-- addddd js -->
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------------------------------------------------------------------------------- meal----------------------------------------------------------------------------------------------------- -->
+
+      <section class="meal d-none" id="meal">
+        <div class="container py-5">
+          <div class="row g-3 text-white">
+            <div class="col-md-4">
+              <div class="meal-info-img">
+                <div class="meal-pic">
+                  <img
+                    src="images/g046bb1663960946.jpg"
+                    alt="meal pic"
+                    class="w-100 rounded-2 mb-2"
+                  />
+                  <h1 class="meal-name">sushi</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="meal-details">
+                <h2>Instructions</h2>
+                <p class="meal-recipe">
+                  Squeeze lime over chicken and rub well. Drain off excess lime
+                  juice. Combine tomato, scallion, onion, garlic, pepper, thyme,
+                  pimento and soy sauce in a large bowl with the chicken pieces.
+                  Cover and marinate at least one hour. Heat oil in a dutch pot
+                  or large saucepan. Shake off the seasonings as you remove each
+                  piece of chicken from the marinade. Reserve the marinade for
+                  sauce. Lightly brown the chicken a few pieces at a time in
+                  very hot oil. Place browned chicken pieces on a plate to rest
+                  while you brown the remaining pieces. Drain off excess oil and
+                  return the chicken to the pan. Pour the marinade over the
+                  chicken and add the carrots. Stir and cook over medium heat
+                  for 10 minutes. Mix flour and coconut milk and add to stew,
+                  stirring constantly. Turn heat down to minimum and cook
+                  another 20 minutes or until tender.
+                </p>
+                <h3>Area: <span class="meal-area"> Jamaican</span></h3>
+                <h3>Category : <span class="meal-category"> Chicken</span></h3>
+                <h3>Recipes :</h3>
+                <ul class="d-flex meal-recipe-list flex-wrap">
+                  <li class="alert alert-info p-1 m-2">1 whole Chicken</li>
+                  <li class="alert alert-info p-1 m-2">1 whole Chicken</li>
+                  <li class="alert alert-info p-1 m-2">1 whole Chicken</li>
+                </ul>
+                <h3>Tags :</h3>
+                <ul class="d-flex meal-tage-list flex-wrap tag-list">
+                  <li class="alert alert-danger p-1 m-2">1 whole Chicken</li>
+                </ul>
+                <div class="meal-links mt-3">
+                  <a
+                    target="_blank"
+                    href="https:/goole.com"
+                    class="btn btn-success source-btn"
+                    >source</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https:/goole.com"
+                    class="btn btn-danger youtube-btn"
+                    >youtube</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------------------------------------------------------------------------------------------------- cotact us----------------------------------------------------------------------------------------------------- -->
+
+      <section id="contact-us" class="contact-us d-none">
+        <div class="container">
+          <div class="row w-75">
+            <div class="col-md-6">
+              <div class="input-content my-3">
+                <input
+                  type="text"
+                  name="userName"
+                  placeholder="Enter Your Name"
+                  class="form-control"
+                  id="userName"
+                />
+                <p class="input-warning alert alert-danger mt-2 d-none">
+                  Special characters and numbers not allowed
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-content my-3">
+                <input
+                  type="email"
+                  name="userMail"
+                  placeholder="Enter Your Email"
+                  class="form-control"
+                  id="userMail"
+                />
+                <p class="input-warning alert alert-danger mt-2 d-none">
+                  Email not valid *exemple@yyy.zzz
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-content my-3">
+                <input
+                  type="text"
+                  name="userphone"
+                  placeholder="Enter Your Phone"
+                  class="form-control"
+                  id="userphone"
+                />
+                <p class="input-warning alert alert-danger mt-2 d-none">
+                  Enter valid Phone Number
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-content my-3">
+                <input
+                  type="number"
+                  name="userage"
+                  placeholder="Enter Your Age"
+                  class="form-control"
+                  id="userage"
+                />
+                <p class="input-warning alert alert-danger mt-2 d-none">
+                  Enter valid age
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-content my-3">
+                <input
+                  type="password"
+                  name="userpass"
+                  placeholder="Enter Your password"
+                  class="form-control"
+                  id="userpass"
+                />
+                <p class="input-warning alert alert-danger mt-2 d-none">
+                  Enter valid password *Minimum eight characters, at least one
+                  letter and one number:*
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-content my-3">
+                <input
+                  type="password"
+                  name="userrepass"
+                  placeholder="Repassword"
+                  class="form-control"
+                  id="Repassword"
+                />
+                <p class="input-warning alert alert-danger mt-2 d-none">
+                  Enter valid repassword
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button
+                class="btn btn-outline-danger mx-auto d-block my-3 disabled submit-btn"
+              >
+                submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
