@@ -3,7 +3,7 @@ Html-Bootstrap-CSS-JavaScript-Jquery
 
 
 
-# feature
+# features
 1- this app offers  resipes and viedos for your choosed meal  
 2- first you can search for meal by it's name or the first letter  
 3- get meal by it's category    
